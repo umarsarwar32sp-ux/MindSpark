@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#10152d">
+<meta name="google-adsense-account" content="ca-pub-9921027164083548">
+<title>MindSpark — 50 Level Brain Training</title>
+<!-- Google AdSense Auto ads. Enable Auto ads for this site in your AdSense account. -->
+<script async
+ src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9921027164083548"
+ crossorigin="anonymous"></script>
+<style>
+:root{--bg:#0b1024;--panel:#151e3c;--panel2:#202c52;--text:#f5f7ff;--muted:#aab5d6;--cyan:#5ee7ef;--purple:#9b8cff;--pink:#ff79b7;--green:#6ee7a8;--yellow:#ffd66b}
+*{box-sizing:border-box}body{margin:0;min-height:100vh;background:radial-gradient(circle at 10% 0%,#26376c 0,transparent 34%),radial-gradient(circle at 100% 20%,#42285e 0,transparent 30%),var(--bg);font-family:Inter,Segoe UI,Arial,sans-serif;color:var(--text)}
+button{font:inherit;cursor:pointer;border:0}.wrap{width:min(1080px,94%);margin:auto;padding:22px 0 40px}
+header{display:flex;align-items:center;justify-content:space-between;gap:14px;margin-bottom:20px}.brand{display:flex;align-items:center;gap:12px}.logo{width:48px;height:48px;border-radius:16px;background:linear-gradient(135deg,var(--cyan),var(--purple));display:grid;place-items:center;font-size:25px;box-shadow:0 8px 28px #5ee7ef35}.brand h1{font-size:22px;margin:0}.brand p{margin:3px 0 0;color:var(--muted);font-size:11px;letter-spacing:1.5px;text-transform:uppercase}.pill{padding:10px 14px;border:1px solid #ffffff20;border-radius:999px;color:var(--muted);background:#ffffff08;font-size:13px}
+.hero{display:grid;grid-template-columns:1.3fr .7fr;gap:15px}.panel{background:linear-gradient(145deg,#1a2344f2,#141b35f5);border:1px solid #ffffff16;border-radius:23px;padding:21px;box-shadow:0 18px 55px #0003}.intro h2{font-size:clamp(27px,4vw,40px);margin:0 0 10px;line-height:1.08}.intro h2 span{background:linear-gradient(90deg,var(--cyan),var(--purple),var(--pink));background-clip:text;color:transparent}.intro p{color:var(--muted);line-height:1.6;margin:0}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin-top:18px}.stat{background:#ffffff09;border:1px solid #ffffff10;border-radius:14px;padding:11px}.stat small{display:block;color:var(--muted);font-size:10px;text-transform:uppercase;letter-spacing:1px}.stat strong{display:block;font-size:22px;margin-top:5px}
+.side{display:flex;flex-direction:column;justify-content:space-between;gap:12px}.tag{color:var(--cyan);font-size:11px;letter-spacing:1.5px;text-transform:uppercase}.side h3{font-size:20px;margin:7px 0}.side p{color:var(--muted);font-size:13px;line-height:1.5;margin:0}.progress{height:8px;background:#ffffff14;border-radius:99px;overflow:hidden;margin-top:14px}.progress i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--cyan),var(--purple));border-radius:99px;transition:width .3s}
+.ad-note{margin:15px 0;padding:10px;border:1px dashed #ffffff24;border-radius:13px;text-align:center;color:#8792b7;font-size:10px;letter-spacing:1.3px;min-height:34px}
+.game{margin-top:15px}.game-top{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}.game-top h3{margin:0;font-size:20px}.controls{display:flex;gap:7px;flex-wrap:wrap}.soft{padding:10px 12px;border-radius:12px;background:#ffffff10;color:var(--text);border:1px solid #ffffff18}.soft:hover{background:#ffffff1c}.primary{padding:12px 20px;border-radius:13px;color:#10152d;font-weight:800;background:linear-gradient(100deg,var(--cyan),#9bdbff);box-shadow:0 8px 22px #5ee7ef26}.primary:hover{filter:brightness(1.07);transform:translateY(-1px)}
+.challenge{margin-top:18px;background:linear-gradient(145deg,#111a36,#182447);border:1px solid #ffffff15;border-radius:20px;padding:22px;min-height:290px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}.eyebrow{color:var(--cyan);font-size:11px;letter-spacing:2px;text-transform:uppercase}.question{font-size:clamp(26px,5vw,43px);font-weight:850;letter-spacing:1px;margin:18px 0 8px;overflow-wrap:anywhere}.sub{color:var(--muted);font-size:14px;margin:0 0 20px;line-height:1.5}.answers{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;width:100%}.answer{min-width:80px;padding:14px 17px;border-radius:14px;background:#ffffff10;border:1px solid #ffffff20;color:white;font-size:20px;font-weight:750;transition:.15s}.answer:hover{border-color:var(--cyan);background:#5ee7ef18;transform:translateY(-2px)}.answer:disabled{cursor:default;opacity:.9}.answer.correct{background:#1d674a;border-color:var(--green)}.answer.wrong{background:#73334d;border-color:var(--pink)}.feedback{min-height:23px;margin-top:14px;color:var(--yellow);font-weight:700}.bottom{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-top:14px;color:var(--muted);font-size:13px}
+.levels{margin-top:15px}.levels h3{margin:0 0 13px}.level-grid{display:grid;grid-template-columns:repeat(10,1fr);gap:7px}.level{padding:9px 2px;border-radius:10px;background:#ffffff0b;border:1px solid #ffffff14;color:#aab5d6;font-size:12px}.level.done{background:#174b3b;color:#8ff0bd;border-color:#267e60}.level.current{background:#263e69;color:#fff;border-color:var(--cyan);box-shadow:0 0 0 1px #5ee7ef55}.level.locked{opacity:.38;cursor:not-allowed}
+footer{text-align:center;color:#7884a9;font-size:12px;margin-top:22px;line-height:1.6}.overlay{position:fixed;inset:0;background:#080c1ddd;display:none;place-items:center;padding:20px;z-index:5}.modal{width:min(430px,100%);padding:26px;border-radius:22px;background:#1b2547;border:1px solid #ffffff22;text-align:center;box-shadow:0 20px 70px #0008}.modal h2{margin:0 0 8px}.modal p{color:var(--muted);line-height:1.55}.modal .primary{margin-top:10px}
+@media(max-width:700px){.hero{grid-template-columns:1fr}.panel{padding:17px}.wrap{padding-top:15px}.brand h1{font-size:19px}.stats{gap:7px}.stat strong{font-size:19px}.challenge{padding:17px;min-height:270px}.answer{min-width:70px;padding:12px}.level-grid{grid-template-columns:repeat(5,1fr)}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header>
+ <div class="brand"><div class="logo">🧠</div><div><h1>MindSpark</h1><p>50 level brain training</p></div></div>
+ <div class="pill">✦ Think • Focus • Level Up</div>
+</header>
+<section class="hero">
+ <div class="panel intro">
+  <h2>Make your mind <span>stronger every day.</span></h2>
+  <p>Train memory, maths and pattern recognition with 50 progressive levels. Complete each challenge, earn points and unlock the next level. Your progress is saved on this device.</p>
+  <div class="stats">
+   <div class="stat"><small>Total score</small><strong id="score">0</strong></div>
+   <div class="stat"><small>Best score</small><strong id="best">0</strong></div>
+   <div class="stat"><small>Level</small><strong id="levelStat">1 / 50</strong></div>
+  </div>
+ </div>
+ <div class="panel side">
+  <div><div class="tag">Current challenge</div><h3 id="levelTitle">Level 1 · Warm up</h3><p id="levelDesc">Start with a simple memory challenge. Each level gets a little more challenging.</p></div>
+  <div><div class="progress"><i id="progress"></i></div><p style="margin-top:9px" id="progressText">0% completed</p></div>
+ </div>
+</section>
+<div class="ad-note">ADVERTISEMENT · Google AdSense Auto ads appear here or in other suitable page locations when enabled and approved.</div>
+<section class="panel game">
+ <div class="game-top"><h3>⚡ Brain Challenge</h3><div class="controls"><button class="soft" id="soundBtn" type="button">🔊 Sound on</button><button class="soft" id="pauseBtn" type="button">Ⅱ Pause</button><button class="soft" id="resetBtn" type="button">↻ Reset progress</button></div></div>
+ <div class="challenge">
+  <div class="eyebrow" id="typeLabel">Ready?</div>
+  <div class="question" id="question">Your brain workout starts here.</div>
+  <p class="sub" id="instruction">Press Start to begin Level 1.</p>
+  <div class="answers" id="answers"><button class="primary" id="startBtn" type="button">Start game →</button></div>
+  <div class="feedback" id="feedback" aria-live="polite"></div>
+ </div>
+ <div class="bottom"><span id="roundText">Level 1 of 50</span><span>⭐ Correct answer = points and progress</span></div>
+</section>
+<section class="panel levels">
+ <h3>🏆 Level map</h3>
+ <div class="level-grid" id="levelGrid"></div>
+</section>
+<div class="ad-note">ADVERTISEMENT</div>
+<footer>MindSpark is a casual brain-training game for entertainment and practice. It is not a medical or cognitive assessment.<br>© 2026 MindSpark</footer>
+</div>
+<div class="overlay" id="overlay"><div class="modal"><h2 id="modalTitle">Paused</h2><p id="modalText">Take a short break.</p><button class="primary" id="modalBtn" type="button">Continue</button></div></div>
+<script>
+(()=>{
+ const $=id=>document.getElementById(id),TOTAL=50;
+ let level=1,score=0,best=Number(localStorage.getItem('mindspark50Best')||0);
+ let unlocked=Math.max(1,Number(localStorage.getItem('mindspark50Unlocked')||1));
+ let sound=true,paused=false,active=false,answered=false,timeout=null,correctAnswer=null;
+ $('best').textContent=best;
+ const levelNames=['Warm up','Memory spark','Number sense','Pattern finder','Focus mode'];
+ function beep(freq=570,duration=.09){if(!sound)return;try{let C=window.AudioContext||window.webkitAudioContext,c=new C(),o=c.createOscillator(),g=c.createGain();o.connect(g);g.connect(c.destination);o.frequency.value=freq;g.gain.value=.04;o.start();g.gain.exponentialRampToValueAtTime(.001,c.currentTime+duration);o.stop(c.currentTime+duration)}catch(e){}}
+ function update(){
+  $('score').textContent=score;$('best').textContent=best;$('levelStat').textContent=level+' / '+TOTAL;
+  $('levelTitle').textContent='Level '+level+' · '+levelNames[(level-1)%5];
+  $('levelDesc').textContent=level<=10?'Build your foundations with short, friendly puzzles.':level<=25?'Your memory and number challenges are becoming more demanding.':level<=40?'Stay focused: longer patterns and trickier calculations await.':'Final stretch! Take your time and think carefully.';
+  $('progress').style.width=((unlocked-1)/TOTAL*100)+'%';$('progressText').textContent=(unlocked-1)+' of '+TOTAL+' levels unlocked';
+  $('roundText').textContent='Level '+level+' of '+TOTAL;
+  $('levelGrid').innerHTML='';
+  for(let i=1;i<=TOTAL;i++){let b=document.createElement('button');b.className='level '+(i<unlocked?'done':i===level?'current':'locked');b.textContent=i<unlocked?'✓ '+i:(i===level?i:'🔒');b.disabled=i>unlocked;b.title=i>unlocked?'Complete previous levels first':'Level '+i;b.addEventListener('click',()=>{if(i<=unlocked){level=i;newLevel()}});$('levelGrid').appendChild(b)}
+ }
+ function options(vals,answer){correctAnswer=answer;$('answers').innerHTML='';vals.forEach(v=>{let b=document.createElement('button');b.className='answer';b.type='button';b.textContent=v;b.addEventListener('click',()=>choose(v,b));$('answers').appendChild(b)})}
+ function uniqueOptions(answer,spread=5){let s=new Set([answer]);while(s.size<4){let n=answer+Math.floor(Math.random()*(spread*2+1))-spread;if(n!==answer)s.add(n)}return [...s].sort(()=>Math.random()-.5)}
+ function newLevel(){
+  clearTimeout(timeout);paused=false;active=true;answered=false;$('overlay').style.display='none';$('pauseBtn').textContent='Ⅱ Pause';$('feedback').textContent='';
+  const type=(level-1)%3,diff=Math.floor((level-1)/10);
+  if(type===0){
+   $('typeLabel').textContent='👀 MEMORY CHALLENGE';let count=Math.min(3+Math.floor((level-1)/8),8);
+   let seq=Array.from({length:count},()=>Math.floor(Math.random()*9)+1);
+   $('question').textContent=seq.join('  ·  ');$('instruction').textContent='Memorise the numbers. They will disappear shortly.';
+   $('answers').innerHTML='';
+   timeout=setTimeout(()=>{if(!active||paused)return;let pos=Math.floor(Math.random()*seq.length),answer=seq[pos];$('question').textContent='?  ?  ?';$('instruction').textContent='Which number was at position '+(pos+1)+'?';options(uniqueOptions(answer,5),answer)},Math.max(1500,2600-level*15));
+  }else if(type===1){
+   $('typeLabel').textContent='🔢 MATH CHALLENGE';let a=rand(5,15+level*2),b=rand(2,8+level),op=level<8?'+':(Math.random()>.5?'+':'−');let answer=op==='+'?a+b:a-b;
+   if(level>=21&&Math.random()>.55){a=rand(2,8+diff);b=rand(2,9+diff);op='×';answer=a*b}
+   $('question').textContent=a+' '+op+' '+b+' = ?';$('instruction').textContent='Solve the calculation and choose your answer.';options(uniqueOptions(answer,Math.max(5,level)),answer);
+  }else{
+   $('typeLabel').textContent='🧩 PATTERN CHALLENGE';let start=rand(1,10+level),step=rand(2,3+Math.floor(level/8)),len=4+Math.min(2,Math.floor(level/20));let seq=Array.from({length:len},(_,i)=>start+i*step),answer=start+len*step;
+   $('question').textContent=seq.join('  ·  ')+'  ·  ?';$('instruction').textContent='Find the next number in this pattern.';options(uniqueOptions(answer,Math.max(6,level)),answer);
+  }
+  update();
+ }
+ function rand(a,b){return Math.floor(Math.random()*(b-a+1))+a}
+ function choose(value,btn){
+  if(!active||paused||answered)return;answered=true;
+  [...$('answers').children].forEach(x=>x.disabled=true);
+  if(Number(value)===Number(correctAnswer)){
+   btn.classList.add('correct');score+=10+Math.floor(level/5)*2;$('feedback').textContent='✓ Excellent! Correct answer.';beep(780);
+  }else{
+   btn.classList.add('wrong');[...$('answers').children].forEach(x=>{if(Number(x.textContent)===Number(correctAnswer))x.classList.add('correct')});$('feedback').textContent='Not quite. The correct answer is '+correctAnswer+'.';beep(190);
+  }
+  best=Math.max(best,score);localStorage.setItem('mindspark50Best',best);
+  timeout=setTimeout(()=>{if(Number(value)===Number(correctAnswer)){unlocked=Math.max(unlocked,Math.min(TOTAL,level+1));localStorage.setItem('mindspark50Unlocked',unlocked);if(level===TOTAL){completeAll();return}level++}else{ /* Retry same level after an incorrect answer */ }
+   update();newLevel();
+  },1100);
+ }
+ function completeAll(){active=false;best=Math.max(best,score);$('modalTitle').textContent='🏆 50 Levels Complete!';$('modalText').textContent='Amazing work! Your final score is '+score+'. You have completed all 50 levels.';$('modalBtn').textContent='Play again from Level 1';$('modalBtn').onclick=()=>{level=1;score=0;newLevel()};$('overlay').style.display='grid';beep(900,.22)}
+ function pauseGame(){if(!active)return;paused=true;clearTimeout(timeout);$('modalTitle').textContent='⏸ Game paused';$('modalText').textContent='Your current level is '+level+'. Press Continue when you are ready.';$('modalBtn').textContent='Continue';$('modalBtn').onclick=()=>{paused=false;$('overlay').style.display='none';newLevel()};$('overlay').style.display='grid';$('pauseBtn').textContent='▶ Resume'}
+ $('startBtn').addEventListener('click',()=>newLevel());
+ $('pauseBtn').addEventListener('click',()=>{if(!active)return;if(paused){$('overlay').style.display='none';paused=false;newLevel()}else pauseGame()});
+ $('resetBtn').addEventListener('click',()=>{$('modalTitle').textContent='Reset all progress?';$('modalText').textContent='This will clear your saved unlocked levels and best score on this device.';$('modalBtn').textContent='Yes, reset';$('modalBtn').onclick=()=>{localStorage.removeItem('mindspark50Best');localStorage.removeItem('mindspark50Unlocked');level=1;score=0;best=0;unlocked=1;active=false;$('overlay').style.display='none';$('question').textContent='Progress reset!';$('instruction').textContent='Press Start to begin again.';$('answers').innerHTML='<button class="primary" id="startAgain" type="button">Start game →</button>';$('startAgain').onclick=()=>newLevel();update()};$('overlay').style.display='grid'});
+ $('soundBtn').addEventListener('click',()=>{sound=!sound;$('soundBtn').textContent=sound?'🔊 Sound on':'🔇 Sound off';if(sound)beep()});
+ $('modalBtn').onclick=()=>{$('overlay').style.display='none';paused=false;newLevel()};
+ update();
+})();
+</script>
+</body>
+</html>
